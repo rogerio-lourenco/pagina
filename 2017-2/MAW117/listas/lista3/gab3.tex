@@ -1,0 +1,29 @@
+A área do triângulo é dada pela metade do comprimento da base pela altura.
+Considere então uma reta $r:\R\rightarrow\R^2$:
+\[
+	r(t)=(\alpha t++\beta;\delta t+\gamma),
+\]
+que passa em $t=0$ pelo ponto $(0,y)$ e em $t=1$ pelo ponto $(3;5)$.
+A primeira condição implica em
+\[
+	r(0)=(\beta;\gamma)=(0,y)\implies\left\{\begin{array}{l} \beta=0;\\\gamma=y.\end{array}\right.
+\]
+Usando isso junto com a segunda condição, temos
+\[
+	r(1)=(\alpha;\delta+y)=(3;5)\implies\left\{\begin{array}{l}\alpha=3;\delta=5-y.\end{array}\right.
+\]
+
+Seja $t_0\in\R$ tal que $r(t_0)=(x,0)$.
+Então
+\[
+	r(t_0)=(3t_0;(5-y)t_0+y)=(x,0)\implies\left\{\begin{array}{l}x=3t_0;\\t_0=\frac{-y}{5-y}.\end{array}\right.
+\]
+Ou seja,
+\[
+	x=\frac{-3y}{5-y}\implies (5-y)x+3y=0\implies 5x+y(3-x)=0\implies y=\frac{-5x}{3-x}=\frac{5x}{x-3}.
+\]
+
+Logo, como podemos tomar qualquer $x>0$, temos que a área é a função $A:\R_+\rightarrow\R$, onde
+\[
+	A(x)=\frac{xy}{2}=\frac{x}{2}\cdot\frac{5x}{x-3}=\frac{5x^2}{2(x-3)}.
+\]
