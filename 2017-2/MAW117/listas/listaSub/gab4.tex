@@ -1,0 +1,17 @@
+Se o polinômio de grau 3 tem raízes reais $x_1,x_2$ e $x_3$ e $a$ como coeficiente de grau 3, então
+\begin{eqnarray*}
+	ax^3+bx^2+cx+d
+	& = & a(x-x_1)(x-x_2)(x-x_3)\\
+	& = & a(x-x_1)(x^2+x(-x_2-x_3)+x_2x_3)\\
+	& = & a(x^3+x^2(-x_2-x_3-x_1)+x(x_2x_3+x_2x_1+x_1x_3)-x_1x_2x_3).
+\end{eqnarray*}
+Igualando os termos de mesmo grau, obtemos as equações desejadas:
+\[
+	\left\{
+		\begin{array}{rl} 
+			x_1+x_2+x_3 &=\frac{-b}{a};\\
+			x_1x_2+x_1x_3+x_2x_3 &=\frac{c}{a};\\
+			x_1x_2x_3 &=\frac{-d}{a}.
+		\end{array}
+	\right.
+\]

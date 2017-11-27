@@ -1,0 +1,42 @@
+Considere primeiro o caso $x<2$.
+Então $x-2<0$ e $x-5<-3<0$, logo a inequação se torna
+\[
+	\frac{9}{(5-x)-3}>2-x\implies \frac{9}{2-x}>2-x.
+\]
+Como $2-x>0$, temos que
+\[
+	9>(2-x)^2\implies -3<2-x<3\implies -1<x<5.
+\]
+Juntando com a hipótese inicial, temos que $x\in(-1;2)$.
+
+Agora, se $x\in(2;5)$, então $x-2>0$ e $x-5<0$.
+A inequação se torna
+\[
+	\frac{9}{(5-x)-3}>x-2\implies \frac{9}{2-x}>x-2.
+\]
+Agora observe que $x-2>0$ e portanto $2-x<0$.
+Mas então o termo do lado esquerdo é negativo, enquanto que o lado direito é positivo, mostrando que não há soluções
+no intervalo $(2;5)$.
+
+Considere agora $x>5$.
+Então $x-2>3>0$ e $x-5>0$, então
+\[
+	\frac{9}{(x-5)-3}=\frac{9}{x-8}>x-2.
+\]
+Se $5<x<8$, temos uma situação como a anterior, logo, se houver solução, temos que ter $x>8$.
+
+Assumindo então $x>8$, temos
+\begin{eqnarray*}
+	& & 9>(x-8)(x-2)=x^2-10x+16\\
+	& \implies & x^2-10+7<0\\
+	& \implies & x\in\left(5-3\sqrt{2};5+3\sqrt{2}\right)\cap(8;+\infty),
+\end{eqnarray*}
+isto é,
+\[
+	x\in(8;5+3\sqrt{2}).
+\]
+
+Juntando então com o caso inicial, temos que a inequação inicial é válida para
+\[
+	x\in(-1;2)\cup(8;5+3\sqrt{2}).
+\]

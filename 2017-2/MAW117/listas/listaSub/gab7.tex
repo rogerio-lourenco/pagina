@@ -1,0 +1,21 @@
+Observando que foi feito um comentário em sala de que o anunciado estava errado: deve-se mostrar que a desigualdade é válida
+para todo $n\in\N$ e para $x>-1$ (essa restrição em $x$ nos dá que $1+x>0$).
+
+Considere o caso $n=1$.
+Nesse caso a desigualdade é válida, pois
+\[
+	(1+x)^1=1+x=1+1\cdot x\geq 1+1\cdot x.
+\]
+
+Agora façamos o passo de indução: suponha que seja válida para $n$.
+Vamos mostrar que isso implica que também é válida para $n+1$.
+Para isso, note que
+\begin{eqnarray*}
+	(1+x)^{n+1}
+	& = & (1+x)(1+x)^n\\
+	& \geq & (1+x)(1+nx)\\
+	& = & 1+nx+x+nx^2\\
+	& = & 1+(n+1)x+nx^2\\
+	& \geq & 1+(n+1)x,
+\end{eqnarray*}
+já que $nx^2\geq 0$, demonstrando o resultado.
